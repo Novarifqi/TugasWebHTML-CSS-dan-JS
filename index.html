@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Acara Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jadwal Acara</h1>
+
+    <table id="eventTable">
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Waktu</th>
+          <th>Acara</th>
+          <th>Deskripsi</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <div class="add-event-form">
+      <h2>Tambah Acara Baru</h2>
+      <form id="addEventForm">
+        <label for="dateInput">Tanggal:</label>
+        <input type="date" id="dateInput" name="date" required>
+
+        <label for="timeInput">Waktu:</label>
+        <input type="time" id="timeInput" name="time" required>
+
+        <label for="eventInput">Acara:</label>
+        <input type="text" id="eventInput" name="event" required>
+
+        <label for="reminderInput">Deskripsi:</label>
+        <textarea id="reminderInput" name="reminder"></textarea>
+
+        <button type="submit">Tambah Acara</button>
+      </form>
+    </div>
+
+    <div id="eventDetail">
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
